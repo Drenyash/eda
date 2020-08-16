@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eda</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <aside class="left-menu">
+    <a class="logo" href="index.html">
+      <img src="img/Logo.png" alt="">
+    </a>
+    <nav class="left-menu__nav">
+      <ul class="left-menu__list">
+        <li class="left-menu__item">
+          <a class="left-menu__link left-menu__link--toggle" href="#">Рецепты</a>
+        </li>
+        <li class="left-menu__item">
+          <a class="left-menu__link" href="#">Продукты</a>
+        </li>
+        <li class="left-menu__item">
+          <a class="left-menu__link" href="#">Как приготовить</a>
+        </li>
+        <li class="left-menu__item">
+          <a class="left-menu__link" href="#">Кулинарная книга</a>
+        </li>
+        <li class="left-menu__item">
+          <a class="left-menu__link" href="#">Здоровье</a>
+        </li>
+        <li class="left-menu__item">
+          <a class="left-menu__link" href="#">Авторы</a>
+        </li>
+      </ul>
+      <div class="left-menu__wrapper">
+        <div class="left-menu__language">
+          <button class="switch-btn switch-btn--toggle" type="button">Ru</button>
+          <button class="switch-btn" type="button">En</button>
+        </div>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="#">vk</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">fb</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">inst</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">g+</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </aside>
+  <main class="main">
+    <div class="container">
+      <header class="header">
+        <form action="#">
+          <input type="search" placeholder="Поиск">
+        </form>
+        <ul class="user-navigation">
+          <li class="user-navigation__item">bell</li>
+          <li class="user-navigation__item">avatar</li>
+        </ul>
+      </header>
+
+      <section class="recipes-filter">
+        <h2 class="section__title recipes-filter__title">Подбор рецептов</h2>
+        <div class="recipes-filter__miltifilter">
+          <ul class="miltifilter">
+            <li class="miltifilter">Выпечка и десерты</li>
+            <li class="miltifilter">Любое блюдо</li>
+            <li class="miltifilter">Любая кухня</li>
+            <li class="miltifilter">Любое меню</li>
+            <li class="miltifilter">Сложность</li>
+          </ul>
+          <div class="recipes-filter__right">
+            <ul class="miltifilter-more">
+              <li class="miltifilter-more__item">Ингредиенты, детали</li>
+              <a class="btn" href="#">Подобрать рецепты</a>
+            </ul>
+          </div>
+        </div>
+        <div class="recipes-filter__view">
+          <article class="recipes-filter__item recipes-filter__item--title">
+            <h3 class="recipes-filter__head">Куриные ножки на гриле</h3>
+            <p class="recipes-filter__description">Блюдо дня</p>
+            <img src="" alt="">
+          </article>
+          <article class="recipes-filter__item recipes-filter__item--title">
+            <h3 class="recipes-filter__head">7 Лучших рецептов недели</h3>
+            <p class="recipes-filter__description">Лучшие рецепты недели</p>
+            <img src="" alt="">
+          </article>
+          <article class="recipes-filter__item recipes-filter__item--full">
+            <p class="recipes-filter__text">Как приготовить пирог в одной посуде 5 рецептов</p>
+            <div class="recipes-filter__about">Полезное</div>
+          </article>
+          <article class="recipes-filter__item recipes-filter__item--half">
+            <p class="recipes-filter__text">Как приготовить сырный торт с овощами</p>
+            <div class="recipes-filter__about">Полезное</div>
+          </article>
+          <article class="recipes-filter__item recipes-filter__item--half">
+            <p class="recipes-filter__text">10 простых напитков в жару</p>
+            <div class="recipes-filter__about">Полезное</div>
+          </article>
+          <article class="recipes-filter__item recipes-filter__item--half">
+            <p class="recipes-filter__text">Что такое мед?</p>
+            <div class="recipes-filter__about">Полезное</div>
+          </article>
+          <article class="recipes-filter__item recipes-filter__item--half">
+            <p class="recipes-filter__text">Как правильно замесить дрожевое тесто</p>
+            <div class="recipes-filter__about">Полезное</div>
+          </article>
+          <article class="recipes-filter__item recipes-filter__item--full">
+            <p class="recipes-filter__text">Человек, который делает лучшие митболы в бельгии</p>
+            <div class="recipes-filter__about">Полезное</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="recipes">
+        <h2 class="section__title recipes__title">Рецепты</h2>
+        <ul class="filter">
+          <li class="filter__item">
+            <a class="filter__link" href="#">Новые рецепты</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__link" href="#">Популярные</a>
+          </li>
+          <li class="filter__item">
+            <a class="filter__link" href="#">Рекомендуем</a>
+          </li>
+        </ul>
+        <div class="recipes__view">
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about">135 мин</li>
+                  <li class="recipes__about">Сложно</li>
+                  <li class="recipes__about">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="recipes__inner">
+                  <div class="likes">
+                    <button type="button">like</button>
+                    <p class="likes__count">16</p>
+                  </div>
+                  <ul class="recipes__social">
+                    <li class="recipes__social-item">
+                      <a href="#">vk</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">fb</a>
+                    </li>
+                    <li class="recipes__social-item">
+                      <a href="#">ok</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img src="" alt="">
+              <div class="recipes__author">
+                <img src="" alt="">
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="compilation">
+        <h2 class="section__title compilation__title">#ГорячаяПодборка</h2>
+        <div class="compilation__wrapper">
+          <article class="compilation__item">
+            <h3 class="compilation__head">Похмельные рецепты</h3>
+          </article>
+          <article class="compilation__item">
+            <h3 class="compilation__head">Масленица</h3>
+          </article>
+          <article class="compilation__item">
+            <h3 class="compilation__head">Рецепты для детей</h3>
+          </article>
+          <article class="compilation__item">
+            <h3 class="compilation__head">Здоровое питание</h3>
+          </article>
+        </div>
+      </section>
+
+      <section class="authors">
+        <h2 class="section__title authors__title">Топ авторов</h2>
+        <ul class="authors__list">
+          <li class="authors__item">1</li>
+          <li class="authors__item">2</li>
+          <li class="authors__item">3</li>
+          <li class="authors__item">4</li>
+          <li class="authors__item">5</li>
+          <li class="authors__item">6</li>
+          <li class="authors__item">7</li>
+          <li class="authors__item">8</li>
+          <li class="authors__item">9</li>
+          <li class="authors__item">10</li>
+          <li class="authors__item">11</li>
+          <li class="authors__item">12</li>
+          <li class="authors__item">13</li>
+        </ul>
+      </section>
+
+      <section class="feedback">
+        <h2 class="feedback__title">Подпишитесь на рассылку рецептов и советов</h2>
+        <form action="#" class="feedback__form">
+          <div class="feedback__inner">
+            <input type="email" placeholder="Адрес электронной почты">
+            <button class="feedback__btn" type="submit">></button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link" href="#">Главная</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Рецепты</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Идеи</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Журнал</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Авторы</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Реклама</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">FAQ</a>
+        </li>
+      </ul>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" href="#">vk</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">fb</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">inst</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">g+</a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
