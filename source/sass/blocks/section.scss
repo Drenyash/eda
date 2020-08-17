@@ -1,8 +1,35 @@
 .section__title {
+  position: relative;
+}
+
+.section__title h2 {
+  position: relative;
   font-size: 30px;
   line-height: 36px;
   font-weight: 400;
   text-transform: uppercase;
   text-align: center;
   color: #5b5b5b;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #dadada;
+    z-index: -1;
+  }
+}
+
+.section__icon {
+  display: inline-block;
+  padding-left: 9px;
+  padding-right: 9px;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #fff;
 }

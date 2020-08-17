@@ -12,12 +12,30 @@
   list-style: none;
 }
 
+.user-navigation__link {
+  display: block;
+  padding: 5px;
+  position: relative;
+}
+
+.user-navigation__link--bell::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #fe4900;
+}
+
 .user-navigation__item:last-child {
   margin-left: 40px;
 }
 
 .header__form {
-  min-width: 50%;
+  min-width: 40%;
 }
 
 .header__input {
@@ -25,6 +43,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
+  padding-right: 20px;
   font-size: 20px;
   border: none;
 }

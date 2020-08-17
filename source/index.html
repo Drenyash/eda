@@ -63,63 +63,86 @@
           <input class="header__input" type="search" placeholder="Поиск">
         </form>
         <ul class="user-navigation">
-          <li class="user-navigation__item">bell</li>
-          <li class="user-navigation__item">avatar</li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__link user-navigation__link--bell" href="#">
+              <img src="img/bell.png" width="15" height="16" alt="">
+            </a>
+          </li>
+          <li class="user-navigation__item">
+            <a class="user-navigation__link" href="#">
+              <img src="img/user_PROFILE.png" width="11" height="16" alt="">
+            </a>
+          </li>
         </ul>
       </header>
 
       <section class="recipes-filter">
-        <h2 class="section__title recipes-filter__title">Подбор рецептов</h2>
+        <div class="section__title">
+          <img class="section__icon" src="img/head.png" alt="">
+          <h2 class="recipes-filter__title">Подбор рецептов</h2>
+        </div>
         <div class="recipes-filter__miltifilter">
-          <ul class="multifilter">
-            <li class="multifilter__item">Выпечка и десерты</li>
-            <li class="multifilter__item">Любое блюдо</li>
-            <li class="multifilter__item">Любая кухня</li>
-            <li class="multifilter__item">Любое меню</li>
-            <li class="multifilter__item">Сложность</li>
-          </ul>
-          <div class="recipes-filter__right">
-            <ul class="multifilter-more">
-              <li class="multifilter-more__item">Ингредиенты, детали</li>
+          <form action="#" class="multifilter">
+            <p class="recipes-filer__wrapper">
+              <select class="multifilter__item">
+                <option class="multifilter__option">Выпечка и десерты</option>
+              </select>
+              <select class="multifilter__item">
+                <option class="multifilter__option">Любое блюдо</option>
+              </select>
+              <select class="multifilter__item">
+                <option class="multifilter__option">Любая кухня</option>
+              </select>
+              <select class="multifilter__item">
+                <option class="multifilter__option">Любое меню</option>
+              </select>
+              <select class="multifilter__item">
+                <option class="multifilter__option">Сложность</option>
+              </select>
+            </p>
+            <div class="recipes-filter__right">
+              <select class="multifilter__item multifilter__item--right">
+                <option class="multifilter__option">Ингредиенты, детали</option>
+              </select>
               <a class="btn multifilter-more__btn" href="#">Подобрать рецепты</a>
-            </ul>
-          </div>
+            </div>
+          </form>
         </div>
         <div class="recipes-filter__view">
-          <article class="recipes-filter__item recipes-filter__item--title recipes-filter__item--first">
+          <a href="#" class="recipes-filter__item recipes-filter__item--title recipes-filter__item--first">
             <h3 class="recipes-filter__head recipes-filter__head--title">Куриные ножки на гриле</h3>
             <p class="recipes-filter__description">Блюдо дня</p>
             <img src="img/title-icon.png" alt="">
-          </article>
-          <article class="recipes-filter__item recipes-filter__item--title recipes-filter__item--second">
+          </a>
+          <a href="#" class="recipes-filter__item recipes-filter__item--title recipes-filter__item--second">
             <h3 class="recipes-filter__head recipes-filter__head--title">7 лучших рецептов<br>недели</h3>
             <p class="recipes-filter__description">Лучшие рецепты недели</p>
             <img src="img/title-icon.png" alt="">
-          </article>
-          <article class="recipes-filter__item recipes-filter__item--full recipes-filter__item--third">
+          </a>
+          <a href="#" class="recipes-filter__item recipes-filter__item--full recipes-filter__item--third">
             <p class="recipes-filter__text">Как приготовить пирог в одной посуде 5 рецептов</p>
             <div class="recipes-filter__about">Полезное</div>
-          </article>
-          <article class="recipes-filter__item recipes-filter__item--half recipes-filter__item--fourth">
+          </a>
+          <a href="#" class="recipes-filter__item recipes-filter__item--half recipes-filter__item--fourth">
             <p class="recipes-filter__text">Как приготовить сырный торт с овощами</p>
             <div class="recipes-filter__about">Полезное</div>
-          </article>
-          <article class="recipes-filter__item recipes-filter__item--half recipes-filter__item--fifth">
+          </a>
+          <a href="#" class="recipes-filter__item recipes-filter__item--half recipes-filter__item--fifth">
             <p class="recipes-filter__text">10 простых напитков в жару</p>
             <div class="recipes-filter__about">Полезное</div>
-          </article>
-          <article class="recipes-filter__item recipes-filter__item--half recipes-filter__item--six">
+          </a>
+          <a href="#" class="recipes-filter__item recipes-filter__item--half recipes-filter__item--six">
             <p class="recipes-filter__text">Что такое мед?</p>
             <div class="recipes-filter__about">Полезное</div>
-          </article>
-          <article class="recipes-filter__item recipes-filter__item--half recipes-filter__item--seven">
+          </a>
+          <a href="#" class="recipes-filter__item recipes-filter__item--half recipes-filter__item--seven">
             <p class="recipes-filter__text">Как правильно замесить дрожевое тесто</p>
             <div class="recipes-filter__about">Полезное</div>
-          </article>
-          <article class="recipes-filter__item recipes-filter__item--full recipes-filter__item--eight">
+          </a>
+          <a href="#" class="recipes-filter__item recipes-filter__item--full recipes-filter__item--eight">
             <p class="recipes-filter__text">Человек, который делает лучшие митболы в бельгии</p>
             <div class="recipes-filter__about">Полезное</div>
-          </article>
+          </a>
         </div>
       </section>
 
