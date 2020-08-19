@@ -22,8 +22,8 @@
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 2px;
+  right: 2px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -34,16 +34,43 @@
   margin-left: 40px;
 }
 
+.user-navigation__link:hover .user-navigation__icon,
+.user-navigation__link:focus .user-navigation__icon {
+  fill: #d9be8f;
+}
+
+.user-navigation__icon {
+  transition: 0.2s;
+  fill: #b2b2b2;
+}
+
 .header__form {
   min-width: 40%;
+}
+
+.header__inner {
+  position: relative;
 }
 
 .header__input {
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 25px;
   padding-right: 20px;
   font-size: 20px;
   border: none;
+}
+
+.header__input:hover+.header__icon,
+.header__input:focus+.header__icon {
+  fill: #d9be8f;
+}
+
+.header__icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: 0.2s;
 }

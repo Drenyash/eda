@@ -1,0 +1,242 @@
+.recipes {
+  margin-bottom: 110px;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+  max-width: 450px;
+  margin: 0 auto;
+  border-radius: 19px;
+  background-color: #f1f1f1;
+  list-style: none;
+}
+
+.filter__link {
+  display: block;
+  padding: 10px 25px 11px 28px;
+  color: #5b5b5b;
+  font-weight: 400;
+  border-radius: 18px;
+  transition: 0.4s;
+  &--toggle {
+    border-radius: 18px;
+    background-color: #2f3032;
+    color: #f1f1f1;
+  }
+  &:hover:not(.filter__link--toggle) {
+    background-color: #2f303257;
+    color: #f1f1f1;
+  }
+}
+
+.recipes__view {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 30px;
+}
+
+.recipes__wrapper {
+  border: 2px solid #f2f2f2;
+  border-left: none;
+}
+
+.recipes__item {
+  display: flex;
+  align-items: stretch;
+}
+
+.recipes__image {
+  position: relative;
+  order: -1;
+  z-index: -1;
+}
+
+.recipes__image--bg {
+  width: 267px;
+  display: block;
+  height: 100%;
+}
+
+.recipes__author {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 15px;
+  bottom: 14px;
+  z-index: 99;
+}
+
+.recipes__quote {
+  margin-left: 13px;
+  font-style: normal;
+  line-height: 23px;
+  color: #bdbdbd;
+}
+
+.recipes__icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 2px solid #2f3032;
+}
+
+.recipes__top {
+  padding-top: 18px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 26px;
+}
+
+.recipes__head {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #3d3d3d;
+  font-weight: 400;
+}
+
+.recipes__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  margin-bottom: 16px;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+.recipes__about {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 5px 11px 5px 28px;
+  font-size: 14px;
+  color: #b5904e;
+  border-radius: 12px;
+  border: 1px solid #e8e8e8;
+}
+
+.recipes__about--first {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    display: block;
+    margin-top: -8.5px;
+    width: 17px;
+    height: 17px;
+    background-image: url("../../img/clock.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.recipes__about--second {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    display: block;
+    margin-top: -8.5px;
+    width: 17px;
+    height: 17px;
+    background-image: url("../../img/shap.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.recipes__about--third {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    display: block;
+    margin-top: -7px;
+    width: 14px;
+    height: 14px;
+    background-image: url("../../img/run.png");
+    background-repeat: no-repeat;
+  }
+}
+
+.recipes__text {
+  margin: 0;
+  line-height: 16px;
+  letter-spacing: 0.14px;
+  color: #5b5b5b;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+  max-width: 70px;
+  cursor: pointer;
+}
+
+.likes:hover .likes__icon {
+  fill: #f44336;
+}
+
+.likes__icon {
+  margin-right: 8px;
+  fill: #9b9b9b;
+  transition: 0.2s;
+}
+
+.likes__count {
+  color: #9b9b9b;
+  margin: 0;
+}
+
+.recipes__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-left: 15px;
+  padding-right: 27px;
+  padding-bottom: 16px;
+  border-top: 2px solid #f2f2f2;
+}
+
+.recipes__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recipes__social-item {
+  margin-left: 15px;
+}
+
+.recipes__social-item:hover .social__icon--vk {
+  fill: #4c75a3;
+}
+
+.recipes__social-item:hover .social__icon--fb {
+  fill: #3b5998;
+}
+
+.recipes__social-item:hover .social__icon--ok {
+  fill: #ed812b;
+}
+
+.recipes__social-icon {
+  fill: #bcbcbc;
+  transition: 0.2s;
+}
+

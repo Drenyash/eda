@@ -1,3 +1,33 @@
 .footer {
   margin-left: 175px;
+  background-color: #252627;
+}
+
+.footer__bottom {
+  padding: 25px 0;
+}
+
+.footer__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__item {
+  margin-right: 25px;
+}
+
+.footer__link {
+  text-transform: uppercase;
+  color: #949494;
+  transition: 0.2s;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
 }

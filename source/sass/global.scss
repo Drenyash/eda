@@ -17,9 +17,25 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+}
+
 .container {
   width: 100%;
-  max-width: 1745px;
+  max-width: 1196px;
+  margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
   overflow: hidden;

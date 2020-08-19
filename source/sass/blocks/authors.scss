@@ -1,0 +1,39 @@
+.authors {
+  margin-bottom: 25px;
+}
+
+.section__title .authors__title {
+  &::before {
+    display: none;
+  }
+}
+
+.authors__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.authors__item {
+  margin-right: 20px;
+}
+
+.authors__link {
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: gray;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url("../../img/quote-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  &:last-child {
+    margin-right: 0;
+  }
+}

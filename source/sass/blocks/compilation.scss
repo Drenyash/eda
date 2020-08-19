@@ -1,0 +1,49 @@
+.compilation {
+  margin-bottom: 50px;
+}
+
+.compilation__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.compilation__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 43px;
+  padding-left: 70px;
+  padding-right: 70px;
+  background-color: gray;
+  text-align: center;
+  width: 267px;
+  height: 427px;
+  background-repeat: no-repeat;
+}
+
+.compilation__item--first {
+  background-image: url("../../img/sharp-1.jpg");
+}
+
+.compilation__item--second {
+  background-image: url("../../img/sharp-2.jpg");
+}
+
+.compilation__item--third {
+  background-image: url("../../img/sharp-3.jpg");
+}
+
+.compilation__item--fourth {
+  background-image: url("../../img/sharp-4.jpg");
+}
+
+.compilation__head {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #f0f0f0;
+}

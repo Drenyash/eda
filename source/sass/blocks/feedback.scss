@@ -1,0 +1,38 @@
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 49px;
+  background-color: #e8e8e8;
+}
+
+.feedback__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #252627;
+  font-weight: 400;
+}
+
+.feedback__inner {
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+}
+
+.feedback__btn {
+  width: 40px;
+  height: auto;
+  font-size: 30px;
+  border: none;
+  background-color: #2f3032;
+  color: #fff;
+}
+
+.feedback__input {
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #fcfcfc;
+  border: none;
+  color: #a7a7a7;
+}

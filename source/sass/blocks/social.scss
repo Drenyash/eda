@@ -1,5 +1,6 @@
 .social {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -16,3 +17,26 @@
 .social__link {
   color: #fff;
 }
+
+.social__link:hover .social__icon--vk {
+  fill: #4c75a3;
+}
+
+.social__link:hover .social__icon--fb {
+  fill: #3b5998;
+}
+
+.social__link:hover .social__icon--inst {
+  fill: #7b23ad;
+}
+
+.social__link:hover .social__icon--gp {
+  fill: #f44336;
+}
+
+.social__icon {
+  fill: #fff;
+  transition: 0.2s;
+}
+
+

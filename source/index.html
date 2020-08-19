@@ -4,36 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eda</title>
+  <link rel="preload" href="fonts/z-PFDinTextCompPro-Bold.woff2" as="fonts">
+  <link rel="preload" href="fonts/PFDinTextCompPro-Regular.woff2" as="fonts">
   <link rel="stylesheet" href="css/style.min.css">
+  <title>Eda</title>
 </head>
 
 <body>
   <aside class="left-menu">
-    <a class="logo" href="index.html">
-      <img src="img/Logo.png" alt="">
-    </a>
     <nav class="left-menu__nav">
-      <ul class="left-menu__list">
-        <li class="left-menu__item">
-          <a class="left-menu__link left-menu__link--toggle" href="#">Рецепты</a>
-        </li>
-        <li class="left-menu__item">
-          <a class="left-menu__link" href="#">Продукты</a>
-        </li>
-        <li class="left-menu__item">
-          <a class="left-menu__link" href="#">Как приготовить</a>
-        </li>
-        <li class="left-menu__item">
-          <a class="left-menu__link" href="#">Кулинарная книга</a>
-        </li>
-        <li class="left-menu__item">
-          <a class="left-menu__link" href="#">Здоровье</a>
-        </li>
-        <li class="left-menu__item">
-          <a class="left-menu__link" href="#">Авторы</a>
-        </li>
-      </ul>
+      <div class="left-menu__top">
+        <a class="logo" href="index.html">
+          <img src="img/Logo.png" alt="">
+        </a>
+        <ul class="left-menu__list">
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="#">Рецепты</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="#">Продукты</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="#">Как приготовить</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="#">Кулинарная книга</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="#">Здоровье</a>
+          </li>
+          <li class="left-menu__item">
+            <a class="left-menu__link" href="#">Авторы</a>
+          </li>
+        </ul>
+      </div>
       <div class="left-menu__wrapper">
         <div class="left-menu__language">
           <button class="switch-btn switch-btn--toggle" type="button">Ru</button>
@@ -41,36 +45,117 @@
         </div>
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="#">vk</a>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--vk" width="15px" height="15px" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                <path
+                  d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">fb</a>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--fb" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <path
+                    d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">inst</a>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--inst" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 169.063 169.063"
+                style="enable-background:new 0 0 169.063 169.063;" xml:space="preserve">
+                <g>
+                  <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+		c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+		c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+		c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+                  <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+		C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+		c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+                  <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+		c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+		C135.661,29.421,132.821,28.251,129.921,28.251z" />
+                </g>
+              </svg>
+            </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="#">g+</a>
+            <a class="social__link" href="#">
+              <svg class="social__icon social__icon--gp" width="15px" height="15px" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="m21.823 9h-2.187v2.177h-2.177v2.187h2.177v2.177h2.187v-2.177h2.177v-2.187h-2.177z" />
+                <path
+                  d="m7.5 19.5c4.328 0 7.203-3.038 7.203-7.326 0-.491-.051-.87-.122-1.248h-7.08v2.578h4.257c-.174 1.095-1.289 3.233-4.257 3.233-2.557 0-4.645-2.118-4.645-4.737s2.087-4.738 4.645-4.738c1.463 0 2.435.624 2.988 1.156l2.036-1.954c-1.311-1.227-2.999-1.964-5.025-1.964-4.144 0-7.5 3.356-7.5 7.5s3.356 7.5 7.5 7.5z" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </nav>
   </aside>
+
   <main class="main">
     <div class="container">
       <header class="header">
         <form class="header__form" action="#">
-          <input class="header__input" type="search" placeholder="Поиск">
+          <div class="header__inner">
+            <input class="header__input" type="search">
+            <svg class="header__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 30.239 30.239"
+              style="enable-background:new 0 0 16 16;" xml:space="preserve">
+              <path d="M20.194,3.46c-4.613-4.613-12.121-4.613-16.734,0c-4.612,4.614-4.612,12.121,0,16.735
+        c4.108,4.107,10.506,4.547,15.116,1.34c0.097,0.459,0.319,0.897,0.676,1.254l6.718,6.718c0.979,0.977,2.561,0.977,3.535,0
+        c0.978-0.978,0.978-2.56,0-3.535l-6.718-6.72c-0.355-0.354-0.794-0.577-1.253-0.674C24.743,13.967,24.303,7.57,20.194,3.46z
+        M18.073,18.074c-3.444,3.444-9.049,3.444-12.492,0c-3.442-3.444-3.442-9.048,0-12.492c3.443-3.443,9.048-3.443,12.492,0
+        C21.517,9.026,21.517,14.63,18.073,18.074z" />
+            </svg>
+          </div>
         </form>
         <ul class="user-navigation">
           <li class="user-navigation__item">
             <a class="user-navigation__link user-navigation__link--bell" href="#">
-              <img src="img/bell.png" width="15" height="16" alt="">
+              <svg class="user-navigation__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="16px" viewBox="0 0 512 512"
+                xml:space="preserve">
+                <g>
+                  <path d="M467.812,431.851l-36.629-61.056c-16.917-28.181-25.856-60.459-25.856-93.312V224c0-67.52-45.056-124.629-106.667-143.04
+			V42.667C298.66,19.136,279.524,0,255.993,0s-42.667,19.136-42.667,42.667V80.96C151.716,99.371,106.66,156.48,106.66,224v53.483
+			c0,32.853-8.939,65.109-25.835,93.291l-36.629,61.056c-1.984,3.307-2.027,7.403-0.128,10.752c1.899,3.349,5.419,5.419,9.259,5.419
+			H458.66c3.84,0,7.381-2.069,9.28-5.397C469.839,439.275,469.775,435.136,467.812,431.851z" />
+                </g>
+                <g>
+                  <path
+                    d="M188.815,469.333C200.847,494.464,226.319,512,255.993,512s55.147-17.536,67.179-42.667H188.815z" />
+                </g>
+              </svg>
+
             </a>
           </li>
           <li class="user-navigation__item">
             <a class="user-navigation__link" href="#">
-              <img src="img/user_PROFILE.png" width="11" height="16" alt="">
+              <svg class="user-navigation__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+                viewBox="0 0 460.8 460.8" xml:space="preserve">
+                <g>
+                  <path d="M230.432,0c-65.829,0-119.641,53.812-119.641,119.641s53.812,119.641,119.641,119.641s119.641-53.812,119.641-119.641
+			S296.261,0,230.432,0z" />
+                </g>
+                <g>
+                  <path d="M435.755,334.89c-3.135-7.837-7.314-15.151-12.016-21.943c-24.033-35.527-61.126-59.037-102.922-64.784
+			c-5.224-0.522-10.971,0.522-15.151,3.657c-21.943,16.196-48.065,24.555-75.233,24.555s-53.29-8.359-75.233-24.555
+			c-4.18-3.135-9.927-4.702-15.151-3.657c-41.796,5.747-79.412,29.257-102.922,64.784c-4.702,6.792-8.882,14.629-12.016,21.943
+			c-1.567,3.135-1.045,6.792,0.522,9.927c4.18,7.314,9.404,14.629,14.106,20.898c7.314,9.927,15.151,18.808,24.033,27.167
+			c7.314,7.314,15.673,14.106,24.033,20.898c41.273,30.825,90.906,47.02,142.106,47.02s100.833-16.196,142.106-47.02
+			c8.359-6.269,16.718-13.584,24.033-20.898c8.359-8.359,16.718-17.241,24.033-27.167c5.224-6.792,9.927-13.584,14.106-20.898
+			C436.8,341.682,437.322,338.024,435.755,334.89z" />
+                </g>
+              </svg>
             </a>
           </li>
         </ul>
@@ -83,22 +168,32 @@
         </div>
         <div class="recipes-filter__miltifilter">
           <form action="#" class="multifilter">
-            <p class="recipes-filer__wrapper">
+            <p class="recipes-filter__wrapper">
+            <div class="multifilter__wrapper">
               <select class="multifilter__item">
                 <option class="multifilter__option">Выпечка и десерты</option>
               </select>
+            </div>
+            <div class="multifilter__wrapper">
               <select class="multifilter__item">
                 <option class="multifilter__option">Любое блюдо</option>
               </select>
+            </div>
+            <div class="multifilter__wrapper">
               <select class="multifilter__item">
                 <option class="multifilter__option">Любая кухня</option>
               </select>
+            </div>
+            <div class="multifilter__wrapper">
               <select class="multifilter__item">
                 <option class="multifilter__option">Любое меню</option>
               </select>
+            </div>
+            <div class="multifilter__wrapper">
               <select class="multifilter__item">
                 <option class="multifilter__option">Сложность</option>
               </select>
+            </div>
             </p>
             <div class="recipes-filter__right">
               <select class="multifilter__item multifilter__item--right">
@@ -147,10 +242,13 @@
       </section>
 
       <section class="recipes">
-        <h2 class="section__title recipes__title">Рецепты</h2>
+        <div class="section__title">
+          <img class="section__icon" src="img/head.png" alt="">
+          <h2 class="recipes-filter__title">Рецепты</h2>
+        </div>
         <ul class="filter">
           <li class="filter__item">
-            <a class="filter__link" href="#">Новые рецепты</a>
+            <a class="filter__link filter__link--toggle" href="#">Новые рецепты</a>
           </li>
           <li class="filter__item">
             <a class="filter__link" href="#">Популярные</a>
@@ -165,9 +263,9 @@
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -175,29 +273,63 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
@@ -207,9 +339,9 @@
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -217,40 +349,75 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
+
           <article class="recipes__item">
             <div class="recipes__wrapper">
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -258,40 +425,75 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
+
           <article class="recipes__item">
             <div class="recipes__wrapper">
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -299,40 +501,75 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
+
           <article class="recipes__item">
             <div class="recipes__wrapper">
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -340,40 +577,75 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
+
           <article class="recipes__item">
             <div class="recipes__wrapper">
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -381,40 +653,75 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
+
           <article class="recipes__item">
             <div class="recipes__wrapper">
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -422,40 +729,75 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
+
           <article class="recipes__item">
             <div class="recipes__wrapper">
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -463,40 +805,75 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
+
           <article class="recipes__item">
             <div class="recipes__wrapper">
               <div class="recipes__top">
                 <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
                 <ul class="recipes__list">
-                  <li class="recipes__about">135 мин</li>
-                  <li class="recipes__about">Сложно</li>
-                  <li class="recipes__about">125 ккал</li>
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
                 </ul>
                 <p class="recipes__text">говядина, масло топлёное, лук репчатый,
                   морковь, редька, перец сладкий, помидоры,
@@ -504,29 +881,139 @@
                   соль, перец чёрный, зелень петрушки...</p>
               </div>
               <div class="recipes__bottom">
-                <div class="recipes__inner">
-                  <div class="likes">
-                    <button type="button">like</button>
-                    <p class="likes__count">16</p>
-                  </div>
-                  <ul class="recipes__social">
-                    <li class="recipes__social-item">
-                      <a href="#">vk</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">fb</a>
-                    </li>
-                    <li class="recipes__social-item">
-                      <a href="#">ok</a>
-                    </li>
-                  </ul>
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
                 </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
             <div class="recipes__image">
-              <img src="" alt="">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
               <div class="recipes__author">
-                <img src="" alt="">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
+              </div>
+            </div>
+          </article>
+
+          <article class="recipes__item">
+            <div class="recipes__wrapper">
+              <div class="recipes__top">
+                <h3 class="recipes__head">Утиные ножки с овощами и грудинкой</h3>
+                <ul class="recipes__list">
+                  <li class="recipes__about recipes__about--first">135 мин</li>
+                  <li class="recipes__about recipes__about--second">Сложно</li>
+                  <li class="recipes__about recipes__about--third">125 ккал</li>
+                </ul>
+                <p class="recipes__text">говядина, масло топлёное, лук репчатый,
+                  морковь, редька, перец сладкий, помидоры,
+                  томат-пюре, картофель, чеснок, бульон мясной,
+                  соль, перец чёрный, зелень петрушки...</p>
+              </div>
+              <div class="recipes__bottom">
+                <div class="likes">
+                  <svg class="likes__icon" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="19px" viewBox="0 0 477.534 477.534"
+                    xml:space="preserve">
+                    <g>
+                      <path d="M438.482,58.61c-24.7-26.549-59.311-41.655-95.573-41.711c-36.291,0.042-70.938,15.14-95.676,41.694l-8.431,8.909
+			l-8.431-8.909C181.284,5.762,98.662,2.728,45.832,51.815c-2.341,2.176-4.602,4.436-6.778,6.778
+			c-52.072,56.166-52.072,142.968,0,199.134l187.358,197.581c6.482,6.843,17.284,7.136,24.127,0.654
+			c0.224-0.212,0.442-0.43,0.654-0.654l187.29-197.581C490.551,201.567,490.551,114.77,438.482,58.61z M413.787,234.226h-0.017
+			L238.802,418.768L63.818,234.226c-39.78-42.916-39.78-109.233,0-152.149c36.125-39.154,97.152-41.609,136.306-5.484
+			c1.901,1.754,3.73,3.583,5.484,5.484l20.804,21.948c6.856,6.812,17.925,6.812,24.781,0l20.804-21.931
+			c36.125-39.154,97.152-41.609,136.306-5.484c1.901,1.754,3.73,3.583,5.484,5.484C453.913,125.078,454.207,191.516,413.787,234.226
+			z" />
+                    </g>
+                  </svg>
+                  <p class="likes__count">16</p>
+                </div>
+                <ul class="recipes__social">
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--vk" id="Bold" enable-background="new 0 0 24 24"
+                        width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--fb" version="1.1" id="Capa_1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        width="16px" height="16px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;"
+                        xml:space="preserve">
+                        <path
+                          d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="recipes__social-item">
+                    <a href="#">
+                      <svg class="recipes__social-icon social__icon--ok" id="Bold" enable-background="new 0 0 24 24"
+                        width="17px" height="17px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="m4.721 12.881c-.613 1.205.083 1.781 1.671 2.765 1.35.834 3.215 1.139 4.413 1.261-.491.472 1.759-1.692-4.721 4.541-1.374 1.317.838 3.43 2.211 2.141l3.717-3.585c1.423 1.369 2.787 2.681 3.717 3.59 1.374 1.294 3.585-.801 2.226-2.141-.102-.097-5.037-4.831-4.736-4.541 1.213-.122 3.05-.445 4.384-1.261l-.001-.001c1.588-.989 2.284-1.564 1.68-2.769-.365-.684-1.349-1.256-2.659-.267 0 0-1.769 1.355-4.622 1.355-2.854 0-4.622-1.355-4.622-1.355-1.309-.994-2.297-.417-2.658.267z" />
+                        <path
+                          d="m11.999 12.142c3.478 0 6.318-2.718 6.318-6.064 0-3.36-2.84-6.078-6.318-6.078-3.479 0-6.319 2.718-6.319 6.078 0 3.346 2.84 6.064 6.319 6.064zm0-9.063c1.709 0 3.103 1.341 3.103 2.999 0 1.644-1.394 2.985-3.103 2.985s-3.103-1.341-3.103-2.985c-.001-1.659 1.393-2.999 3.103-2.999z" />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="recipes__image">
+              <img class="recipes__image--bg" src="img/r-1.jpg" alt="">
+              <div class="recipes__author">
+                <img class="recipes__icon" src="img/quote-img.jpg" alt="">
+                <cite class="recipes__quote">Daria Fedorenko</cite>
               </div>
             </div>
           </article>
@@ -534,94 +1021,170 @@
       </section>
 
       <section class="compilation">
-        <h2 class="section__title compilation__title">#ГорячаяПодборка</h2>
+        <div class="section__title">
+          <img class="section__icon" src="img/head.png" alt="">
+          <h2 class="recipes-filter__title">#ГорячаяПодборка</h2>
+        </div>
         <div class="compilation__wrapper">
-          <article class="compilation__item">
+          <a class="compilation__item compilation__item--first" href="#">
             <h3 class="compilation__head">Похмельные рецепты</h3>
-          </article>
-          <article class="compilation__item">
+          </a>
+          <a class="compilation__item compilation__item--second" href="#">
             <h3 class="compilation__head">Масленица</h3>
-          </article>
-          <article class="compilation__item">
+          </a>
+          <a class="compilation__item compilation__item--third" href="#">
             <h3 class="compilation__head">Рецепты для детей</h3>
-          </article>
-          <article class="compilation__item">
+          </a>
+          <a class="compilation__item compilation__item--fourth" href="#">
             <h3 class="compilation__head">Здоровое питание</h3>
-          </article>
+          </a>
         </div>
       </section>
 
       <section class="authors">
-        <h2 class="section__title authors__title">Топ авторов</h2>
+        <div class="section__title">
+          <h2 class="recipes-filter__title authors__title">Топ авторов</h2>
+        </div>
         <ul class="authors__list">
-          <li class="authors__item">1</li>
-          <li class="authors__item">2</li>
-          <li class="authors__item">3</li>
-          <li class="authors__item">4</li>
-          <li class="authors__item">5</li>
-          <li class="authors__item">6</li>
-          <li class="authors__item">7</li>
-          <li class="authors__item">8</li>
-          <li class="authors__item">9</li>
-          <li class="authors__item">10</li>
-          <li class="authors__item">11</li>
-          <li class="authors__item">12</li>
-          <li class="authors__item">13</li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
+          <li class="authors__item">
+            <a class="authors__link" href="#"></a>
+          </li>
         </ul>
-      </section>
-
-      <section class="feedback">
-        <h2 class="feedback__title">Подпишитесь на рассылку рецептов и советов</h2>
-        <form action="#" class="feedback__form">
-          <div class="feedback__inner">
-            <input type="email" placeholder="Адрес электронной почты">
-            <button class="feedback__btn" type="submit">></button>
-          </div>
-        </form>
       </section>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">
-      <ul class="footer__list">
-        <li class="footer__item">
-          <a class="footer__link" href="#">Главная</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Рецепты</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Идеи</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Журнал</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Авторы</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">Реклама</a>
-        </li>
-        <li class="footer__item">
-          <a class="footer__link" href="#">FAQ</a>
-        </li>
-      </ul>
-      <ul class="social">
-        <li class="social__item">
-          <a class="social__link" href="#">vk</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">fb</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">inst</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">g+</a>
-        </li>
-      </ul>
-    </div>
+    <section class="feedback">
+      <h2 class="feedback__title">Подпишитесь на рассылку рецептов и советов</h2>
+      <form action="#" class="feedback__form">
+        <div class="feedback__inner">
+          <input class="feedback__input" type="email" placeholder="Адрес электронной почты">
+          <button class="feedback__btn" type="submit">&gt;</button>
+        </div>
+      </form>
+    </section>
+    <section class="footer__bottom">
+      <h2 class="visually-hidden">Футер</h2>
+      <div class="container">
+        <div class="footer__inner">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Главная</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Рецепты</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Идеи</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Журнал</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Авторы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Реклама</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">FAQ</a>
+            </li>
+          </ul>
+          <ul class="social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--vk" width="15px" height="15px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg" xml:space="preserve">
+                  <path
+                    d="m19.915 13.028c-.388-.49-.277-.708 0-1.146.005-.005 3.208-4.431 3.538-5.932l.002-.001c.164-.547 0-.949-.793-.949h-2.624c-.668 0-.976.345-1.141.731 0 0-1.336 3.198-3.226 5.271-.61.599-.892.791-1.225.791-.164 0-.419-.192-.419-.739v-5.105c0-.656-.187-.949-.74-.949h-4.126c-.419 0-.668.306-.668.591 0 .622.945.765 1.043 2.515v3.797c0 .832-.151.985-.486.985-.892 0-3.057-3.211-4.34-6.886-.259-.713-.512-1.001-1.185-1.001h-2.625c-.749 0-.9.345-.9.731 0 .682.892 4.073 4.148 8.553 2.17 3.058 5.226 4.715 8.006 4.715 1.671 0 1.875-.368 1.875-1.001 0-2.922-.151-3.198.686-3.198.388 0 1.056.192 2.616 1.667 1.783 1.749 2.076 2.532 3.074 2.532h2.624c.748 0 1.127-.368.909-1.094-.499-1.527-3.871-4.668-4.023-4.878z" />
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--fb" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 512 512"
+                  xml:space="preserve">
+                  <g>
+                    <path
+                      d="M288,176v-64c0-17.664,14.336-32,32-32h32V0h-64c-53.024,0-96,42.976-96,96v80h-64v80h64v256h96V256h64l32-80H288z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--inst" version="1.1" id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
+                  height="15px" viewBox="0 0 169.063 169.063" style="enable-background:new 0 0 169.063 169.063;"
+                  xml:space="preserve">
+                  <g>
+                    <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+      c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+      c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+      c17.455,0,31.656,14.201,31.656,31.655V122.407z" />
+                    <path
+                      d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+      C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+      c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z" />
+                    <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+      c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+      C135.661,29.421,132.821,28.251,129.921,28.251z" />
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <svg class="social__icon social__icon--gp" width="15px" height="15px" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="m21.823 9h-2.187v2.177h-2.177v2.187h2.177v2.177h2.187v-2.177h2.177v-2.187h-2.177z" />
+                  <path
+                    d="m7.5 19.5c4.328 0 7.203-3.038 7.203-7.326 0-.491-.051-.87-.122-1.248h-7.08v2.578h4.257c-.174 1.095-1.289 3.233-4.257 3.233-2.557 0-4.645-2.118-4.645-4.737s2.087-4.738 4.645-4.738c1.463 0 2.435.624 2.988 1.156l2.036-1.954c-1.311-1.227-2.999-1.964-5.025-1.964-4.144 0-7.5 3.356-7.5 7.5s3.356 7.5 7.5 7.5z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </footer>
 </body>
 
