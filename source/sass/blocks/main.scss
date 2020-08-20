@@ -1,3 +1,9 @@
 .main {
   margin-left: 175px;
 }
+
+@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+  .main {
+    margin-left: 0;
+  }
+}

@@ -26,7 +26,6 @@
 
 .multifilter__wrapper {
   position: relative;
-  margin-left: -20px;
 }
 
 .multifilter__wrapper::after {
@@ -51,9 +50,8 @@
 
 .multifilter-more__btn {
   display: block;
-  padding: 11px 17px 11px 18px;
+  padding: 12px 17px 12px 18px;
   margin-left: 14px;
-  height: 100%;
   color: #fff;
   background-color: #c7b084;
   transition: 0.2s;
@@ -66,7 +64,7 @@
 
 .recipes-filter__right {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .recipes-filter__wrapper {
@@ -204,4 +202,11 @@
     height: 0;
     transition: 0.2s;
   }
+}
+
+.multifilter__flex {
+  justify-content: flex-start;
+  display: flex;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
