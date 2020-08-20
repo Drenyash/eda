@@ -4,7 +4,7 @@
 
 .multifilter {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -13,6 +13,7 @@
 
 .multifilter__item {
   width: 155px;
+  margin-right: -1px;
   padding: 10px 15px 12px 15px;
   border: 1px solid #dedede;
   color: #5d5d5d;
@@ -65,6 +66,7 @@
 .recipes-filter__right {
   display: flex;
   align-items: flex-start;
+  margin-left: auto;
 }
 
 .recipes-filter__wrapper {
@@ -209,4 +211,35 @@
   display: flex;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+@media (max-width: 1334px) {
+  .recipes-filter__right {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+  .multifilter {
+    justify-content: center;
+  }
+  .multifilter__item {
+    margin-bottom: 10px;
+    margin-right: -1px;
+  }
+  .multifilter__item--right {
+    width: 155px;
+  }
+  .multifilter-more__btn {
+    width: 155px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .recipes-filter__right {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+  }
 }

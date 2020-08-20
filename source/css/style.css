@@ -421,6 +421,11 @@ input[type="radio"].visually-hidden {
   padding-right: 50px;
   overflow: hidden; }
 
+@media (min-width: 768px) and (max-width: 1110px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px; } }
+
 .left-menu {
   position: fixed;
   background-color: #2f3032;
@@ -440,6 +445,7 @@ input[type="radio"].visually-hidden {
 
 .left-menu__list {
   margin: 0;
+  margin-bottom: auto;
   padding: 0;
   list-style: none; }
 
@@ -472,23 +478,30 @@ input[type="radio"].visually-hidden {
     position: static; }
   .logo {
     display: inline-block;
-    padding: 20px; }
+    padding: 0;
+    margin-right: 20px; }
   .left-menu__nav {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px; }
   .left-menu__list {
-    display: flex; }
+    display: flex;
+    margin-bottom: 0; }
   .left-menu__wrapper {
     margin-left: auto; }
     .left-menu__wrapper .social {
       display: none; }
   .switch-btn {
-    margin-bottom: 0; } }
+    margin-bottom: 0; }
+  .left-menu__link:hover,
+  .left-menu__link:focus {
+    background-color: transparent;
+    box-shadow: 0 -3px 0 0 #d9be8f inset; } }
 
 .social {
   display: flex;
@@ -569,7 +582,8 @@ input[type="radio"].visually-hidden {
   fill: #b2b2b2; }
 
 .header__form {
-  min-width: 40%; }
+  min-width: 40%;
+  z-index: 1; }
 
 .header__inner {
   position: relative; }
@@ -624,14 +638,15 @@ input[type="radio"].visually-hidden {
   top: -60px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 0; }
 
 .recipes-filter {
   margin-bottom: 80px; }
 
 .multifilter {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -639,6 +654,7 @@ input[type="radio"].visually-hidden {
 
 .multifilter__item {
   width: 155px;
+  margin-right: -1px;
   padding: 10px 15px 12px 15px;
   border: 1px solid #dedede;
   color: #5d5d5d;
@@ -684,7 +700,8 @@ input[type="radio"].visually-hidden {
 
 .recipes-filter__right {
   display: flex;
-  align-items: flex-start; }
+  align-items: flex-start;
+  margin-left: auto; }
 
 .recipes-filter__wrapper {
   margin: 0; }
@@ -807,6 +824,29 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin-right: auto;
   margin-bottom: 20px; }
+
+@media (max-width: 1334px) {
+  .recipes-filter__right {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 10px; } }
+
+@media (min-width: 768px) and (max-width: 1110px) {
+  .multifilter {
+    justify-content: center; }
+  .multifilter__item {
+    margin-bottom: 10px;
+    margin-right: -1px; }
+  .multifilter__item--right {
+    width: 155px; }
+  .multifilter-more__btn {
+    width: 155px;
+    text-align: center;
+    margin-left: 0; }
+  .recipes-filter__right {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0; } }
 
 .recipes {
   margin-bottom: 110px; }
@@ -1012,6 +1052,25 @@ input[type="radio"].visually-hidden {
   fill: #bcbcbc;
   transition: 0.2s; }
 
+@media (min-width: 768px) and (max-width: 1340px) {
+  .recipes__view {
+    justify-content: center;
+    grid-gap: 30px;
+    grid-template-columns: 40% 40%; }
+  .recipes__item {
+    flex-direction: column; }
+  .recipes__wrapper {
+    border-left: 2px solid #f2f2f2;
+    border-top: none; }
+  .recipes__image--bg {
+    width: 100%; }
+  .recipes__top {
+    padding-left: 5%;
+    padding-right: 5%; }
+  .recipes__bottom {
+    padding-left: 5%;
+    padding-right: 7%; } }
+
 .compilation {
   margin-bottom: 50px; }
 
@@ -1030,7 +1089,7 @@ input[type="radio"].visually-hidden {
   padding-right: 70px;
   background-color: gray;
   text-align: center;
-  width: 267px;
+  width: 24%;
   height: 427px;
   background-repeat: no-repeat; }
 
@@ -1146,3 +1205,7 @@ input[type="radio"].visually-hidden {
 .footer__inner {
   display: flex;
   justify-content: space-between; }
+
+@media (min-width: 768px) and (max-width: 1110px) {
+  .footer {
+    margin-left: 0; } }

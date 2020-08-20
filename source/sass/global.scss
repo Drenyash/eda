@@ -40,3 +40,10 @@ input[type="radio"].visually-hidden {
   padding-right: 50px;
   overflow: hidden;
 }
+
+@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

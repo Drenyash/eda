@@ -20,6 +20,7 @@
 
 .left-menu__list {
   margin: 0;
+  margin-bottom: auto;
   padding: 0;
   list-style: none;
 }
@@ -63,19 +64,22 @@
   }
   .logo {
     display: inline-block;
-    padding: 20px;
+    padding: 0;
+    margin-right: 20px;
   }
   .left-menu__nav {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 20px;
   }
   .left-menu__list {
     display: flex;
+    margin-bottom: 0;
   }
   .left-menu__wrapper {
     margin-left: auto;
@@ -85,5 +89,10 @@
   }
   .switch-btn {
     margin-bottom: 0;
+  }
+  .left-menu__link:hover,
+  .left-menu__link:focus {
+    background-color: transparent;
+    box-shadow: 0 -3px 0 0 #d9be8f inset;
   }
 }

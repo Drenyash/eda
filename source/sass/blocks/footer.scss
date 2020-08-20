@@ -31,3 +31,9 @@
   display: flex;
   justify-content: space-between;
 }
+
+@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+  .footer {
+    margin-left: 0;
+  }
+}
