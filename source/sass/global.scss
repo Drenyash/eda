@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  min-width: 320px;
 
   font-size: 16px;
   font-family: "PFDinTextCompPro", "Arial", sans-serif;
@@ -41,7 +42,7 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+@media (min-width: $mobile-size) and (max-width: $desktop-size) {
   .container {
     padding-left: 20px;
     padding-right: 20px;

@@ -48,3 +48,13 @@
   color: #f0f0f0;
 }
 
+@media (max-width: $tablet-size) {
+  .compilation__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .compilation__item {
+    width: 50%;
+    background-size: cover;
+  }
+}

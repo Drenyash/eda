@@ -34,3 +34,15 @@
   background-color: #fff;
   z-index: 0;
 }
+
+@media (max-width: $tablet-size) {
+  .section__icon {
+    display: none;
+  }
+  .section__title h2 {
+    margin-top: 0;
+    &::before {
+      display: none;
+    }
+  }
+}

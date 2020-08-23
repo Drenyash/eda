@@ -32,8 +32,25 @@
   justify-content: space-between;
 }
 
-@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+@media (max-width: $desktop-size) {
   .footer {
     margin-left: 0;
+  }
+}
+
+@media (max-width: $tablet-size) {
+  .footer__inner {
+    flex-wrap: wrap;
+  }
+  .footer__list {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .footer__item {
+    margin: 0 10px 20px;
+  }
+  .social {
+    margin: 0 auto;
   }
 }

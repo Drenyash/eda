@@ -37,3 +37,13 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: $tablet-size) {
+  .authors__list {
+    justify-content: space-evenly;
+  }
+  .authors__item {
+    margin: 0;
+    margin-bottom: 3.2%;
+  }
+}

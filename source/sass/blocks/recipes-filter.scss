@@ -70,6 +70,8 @@
 }
 
 .recipes-filter__wrapper {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -221,7 +223,7 @@
   }
 }
 
-@media (min-width: $tablet-size) and (max-width: $desktop-size) {
+@media (max-width: $desktop-size) {
   .multifilter {
     justify-content: center;
   }
@@ -241,5 +243,34 @@
     margin-left: 0;
     margin-right: 0;
     margin-top: 0;
+  }
+}
+
+@media (max-width: $tablet-size) {
+  .recipes-filter {
+    margin-bottom: 20px;
+  }
+  .recipes-filter__view {
+    grid-template-columns: 100%;
+  }
+  .recipes-filter__item {
+    grid-column: auto;
+    background-size: cover;
+  }
+  .multifilter {
+    justify-content: space-between;
+  }
+  .multifilter__wrapper {
+    width: 50%;
+  }
+  .multifilter__item {
+    width: 100%;
+  }
+  .recipes-filter__right {
+    width: 100%;
+  }
+  .multifilter-more__btn {
+    display: block;
+    width: 100%;
   }
 }

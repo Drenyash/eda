@@ -75,3 +75,10 @@
   transform: translateY(-50%);
   transition: 0.2s;
 }
+
+@media (max-width: $tablet-size) {
+  .header__input {
+    width: 70%;
+    z-index: 1;
+  }
+}
